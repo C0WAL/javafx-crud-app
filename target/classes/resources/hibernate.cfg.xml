@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5433/local?useSSL=false</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">Mwh32d6k</property>
+        <property name="connection.pool_size">20</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="show_sql">false</property>
+        <property name="query.startup_check">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.generate_statistics">false</property>
+        <property name="hibernate.jdbc.batch_size">36</property>
+        <mapping class="personal.javafx.crud.app.entity.Person" />
+    </session-factory>
+</hibernate-configuration>
