@@ -17,7 +17,6 @@ public class App extends Application {
 		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.setTitle("Simple Crud App");
-		stage.setResizable(false);
 		stage.show();
 	}
 

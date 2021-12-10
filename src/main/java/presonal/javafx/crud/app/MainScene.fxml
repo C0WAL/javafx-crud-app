@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="808.0" prefWidth="1283.0" style="-fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presonal.javafx.crud.app.MainSceneController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="340.0" text="Edytuj" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin></Button>
+            <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="340.0" text="Filtruj" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin></Button>
+          <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="340.0" text="Dodaj" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin></Button>
+            <Button alignment="CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="340.0" text="Usuń" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableData" prefHeight="708.0" prefWidth="1284.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="personId" text="ID" />
+                <TableColumn fx:id="name" prefWidth="188.0" text="NAME" />
+                <TableColumn fx:id="surname" prefWidth="75.0" text="SURNAME" />
+                <TableColumn fx:id="phoneNumber" prefWidth="75.0" text="PHONE NUMBER" />
+                <TableColumn fx:id="street" prefWidth="75.0" text="STREET" />
+                <TableColumn fx:id="city" prefWidth="75.0" text="CITY" />
+                <TableColumn fx:id="salary" prefWidth="75.0" text="SALARY" />
+                <TableColumn fx:id="socialSecurityNumber" prefWidth="75.0" text="SSN" />
+                <TableColumn fx:id="birthday" prefWidth="75.0" text="BIRTHDAY" />
+                <TableColumn fx:id="employedSince" prefWidth="75.0" text="EMPLOYED SINCE" />
+                <TableColumn fx:id="job" prefWidth="75.0" text="JOB" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TableView>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
